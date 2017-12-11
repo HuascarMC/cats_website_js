@@ -4,6 +4,7 @@ var app = function() {
  var article = function() {
   var ul = document.createElement('ul');
   ul.classList.add('.cat');
+  return ul;
  }
 
  var nameIt = function(name) {
@@ -15,4 +16,23 @@ var app = function() {
   var catFood = document.createElement('li');
   return catFood;
  }
+
+ var createCat = function(name, favoriteFood) {
+  var cat = document.querySelector('#cat');
+  cat.classList.add('.cat');
+  return cat;
+ }
+
+ var appendCat = function(name, favoriteFood) {
+  var atcle = article();
+  var theList = createCat();
+  var theName = nameIt(name);
+  var theFood = feedIt(favoriteFood);
+
+  atcle.appendChild(theName);
+
+
+
+ }
+ appendCat("Jack", "Sparrow");
 }
