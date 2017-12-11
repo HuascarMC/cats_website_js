@@ -15,19 +15,19 @@ var app = function() {
 
  var feedIt = function(food) {
   var catFood = document.createElement('li');
-  catrFood.innerText = food;
+  catFood.innerText = food;
   return catFood;
  }
 
- var appendCat = function(name, favoriteFood) {
+ var appendCat = function(name, food) {
   var atcle = article();
   var theList = document.querySelector('#cats');
   var theName = nameIt(name);
-  var theFood = feedIt(favoriteFood);
+  var theFood = feedIt(food);
 
   theList.appendChild(atcle);
   atcle.appendChild(theName);
-  atcle.appendChild(thefood);
+  theName.appendChild(theFood);
 
  }
  appendCat("Jack", "Sparrow");
