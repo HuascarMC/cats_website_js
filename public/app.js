@@ -19,11 +19,17 @@ var app = function() {
   return catFood;
  }
 
+var makeImage = function(img) {
+ var catImage = document.createElement('img');
+ catImage.style.src = "https://animalso.com/wp-content/uploads/2017/02/Golden-Retriever-10.jpg"
+ return catImage;
+}
  var appendCat = function(name, food) {
   var atcle = article();
   var theList = document.querySelector('#cats');
   var theName = nameIt(name);
   var theFood = feedIt(food);
+  
 
   theList.appendChild(atcle);
   atcle.appendChild(theName);
