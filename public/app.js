@@ -15,6 +15,7 @@ var app = function() {
 
  var feedIt = function(food) {
   var catFood = document.createElement('li');
+  catrFood.innerText = food;
   return catFood;
  }
 
