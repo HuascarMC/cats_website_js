@@ -24,12 +24,12 @@ var makeImage = function(img) {
  catImage.src = img;
  return catImage;
 }
- var appendCat = function(name, food) {
+ var appendCat = function(name, food, image) {
   var atcle = article();
   var theList = document.querySelector('#cats');
   var theName = nameIt(name);
   var theFood = feedIt(food);
-  var theImage = makeImage("https://animalso.com/wp-content/uploads/2017/02/Golden-Retriever-10.jpg")
+  var theImage = makeImage(image)
 
   theList.appendChild(atcle);
   atcle.appendChild(theName);
@@ -37,7 +37,11 @@ var makeImage = function(img) {
   theFood.appendChild(theImage);
 
  }
- appendCat("Jack", "Sparrow");
+
+ appendCat("Jack", "Sparrow", "https://animalso.com/wp-content/uploads/2017/02/Golden-Retriever-10.jpg");
+ appendCat("Boba", "Sock fluff", "http://66.media.tumblr.com/d1f01bbe0150fda0c40d2151c5eaeac8/tumblr_odlqqskjj61v9cejwo1_400.jpg")
+ appendCat("Barnaby", "Tuna", "https://68.media.tumblr.com/88d0fcf2b84a7b098dda839130597569/tumblr_okuo4teiql1uhevdso1_1280.jpg")
+ appendCat("Max", "Whiskas Temptations", "http://66.media.tumblr.com/7c5784ea89369c780e782bf10c60315a/tumblr_npb0hlYwhV1u63jaco1_1280.jpg")
 }
 
 document.addEventListener('DOMContentLoaded', app);
