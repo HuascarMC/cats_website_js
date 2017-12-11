@@ -17,22 +17,18 @@ var app = function() {
   return catFood;
  }
 
- var createCat = function(name, favoriteFood) {
-  var cat = document.querySelector('#cat');
-  cat.classList.add('.cat');
-  return cat;
- }
-
  var appendCat = function(name, favoriteFood) {
   var atcle = article();
-  var theList = createCat();
+  var theList = document.querySelector('#cats');
   var theName = nameIt(name);
   var theFood = feedIt(favoriteFood);
 
-  atcle.appendChild(theName);
+  theList.appendChild(theName);
 
 
 
  }
  appendCat("Jack", "Sparrow");
 }
+
+document.addEventListener('DOMContentLoaded', app);
