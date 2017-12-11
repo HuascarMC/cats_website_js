@@ -9,6 +9,7 @@ var app = function() {
 
  var nameIt = function(name) {
   var catName = document.createElement('li');
+  catName.innerText = name;
   return catName;
  }
 
@@ -23,9 +24,9 @@ var app = function() {
   var theName = nameIt(name);
   var theFood = feedIt(favoriteFood);
 
-  theList.appendChild(theName);
-
-
+  theList.appendChild(atcle);
+  atcle.appendChild(theName);
+  atcle.appendChild(thefood);
 
  }
  appendCat("Jack", "Sparrow");
